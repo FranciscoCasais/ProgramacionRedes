@@ -4,4 +4,4 @@ function main(): void {
     const chef1: Chef=new Chef("Calvo", "Daniel", fechaNacimiento1, true), chef2: Chef=new Chef("Lobo", "Daniel", fechaNacimiento2, true), chef3: Chef=new Chef("Arquitectura", "Sapo", fechaNacimiento3, true), chef4: Chef=new Chef("Peluquería", "Sapo", fechaNacimiento4, true), chef5: Chef=new Chef("Traumas", "Daniel", fechaNacimiento5, false);
     
 }
-main();
+main();VF
