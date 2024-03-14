@@ -1,26 +1,32 @@
 import { Chef } from "./Chef";
 import { Tipo } from "./Tipo";
+
 export class Plato {
-    nombre: string;
-    descripcion: string;
-    precio: number;
-    tipo: Tipo;
-    chef: Chef;
+
+    private _nombre: string;
+    private _descripcion: string;
+    private _precio: number;
+    private _tipo: Tipo;
+    private _chef: Chef;
+
     constructor(nombre: string, descripcion: string, precio: number, tipo: Tipo, chef: Chef) {
-        this.nombre=nombre;
-        this.descripcion=descripcion;
-        this.precio=precio;
-        this.tipo=tipo;
-        this.chef=chef;
+        this._nombre=nombre;
+        this._descripcion=descripcion;
+        this._precio=precio;
+        this._tipo=tipo;
+        this._chef=chef;
     }
-    public getNombre(): string { return this.nombre; }
-    public getDescripcion(): string { return this.descripcion; }
-    public getPrecio(): number { return this.precio; }
-    public getTipo(): Tipo { return this.tipo; }
-    public getChef(): Chef { return this.chef; }
-    public setNombre(nombre: string): void { this.nombre=nombre; }
-    public setDescripcion(descripcion: string): void { this.descripcion=descripcion; }
-    public setPrecio(precio: number): void { this.precio=precio; }
-    public setTipo(tipo: Tipo): void { this.tipo=tipo; }
-    public setChef(chef: Chef): void { this.chef=chef; }
+
+    public get nombre(): string { return this._nombre; }
+    public get descripcion(): string { return this._descripcion; }
+    public get precio(): number { return this._precio; }
+    public get tipo(): Tipo { return this._tipo; }
+    public get chef(): Chef { return this._chef; }
+
+    public set nombre(nombre: string) { this._nombre=nombre; }
+    public set descripcion(descripcion: string) { this._descripcion=descripcion; }
+    public set precio(precio: number) { this._precio=precio; }
+    public set tipo(tipo: Tipo) { this._tipo=tipo; }
+    public set chef(chef: Chef) { this._chef=chef; }
+
 }
