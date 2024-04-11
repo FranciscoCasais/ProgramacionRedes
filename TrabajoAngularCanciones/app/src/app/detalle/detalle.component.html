@@ -1,0 +1,20 @@
+<article>
+  <img class="listado-foto" [src]="cancion?.foto" />
+  <section class="listing-description">
+
+    <h1> falta nombre y artista</h1>
+    <h2 class="listado-heading">{{cancion?.nombre}}</h2>
+    <p class="listado-ubicacion">{{cancion?.artista}}</p>
+  </section>
+  <section class="listado-features">
+    <h2 class="section-heading">Sobre esta cancion</h2>
+    <ul>
+      <li>:Duracion (segundos): {{cancion?.duracion}}</li>
+      <li>Año de publicacion: {{cancion?.anio_de_publicacion}}</li>
+     
+    </ul>
+  </section>
+  <section class="listado-apply">
+   //aca poner lo de favorito
+  </section>
+</article>
