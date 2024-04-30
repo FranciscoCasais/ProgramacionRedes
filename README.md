@@ -1,4 +1,4 @@
-# Programación sobre redes 2024
+# Programación Sobre Redes 2024
 
 ## Integrantes:
 
